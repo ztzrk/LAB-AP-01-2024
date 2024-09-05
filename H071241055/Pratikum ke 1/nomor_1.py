@@ -1,4 +1,4 @@
-harga_kemarin = float(input("Masukkan harga sekarang :"))
+harga_kemarin = float(input("Masukkan harga kemarin :"))
 harga_sekarang = 105.0
 pilihan = ['jual', 'tahan', 'beli']
 
