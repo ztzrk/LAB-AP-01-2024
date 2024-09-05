@@ -1,5 +1,5 @@
-harga_sekarang = float(input("Masukkan harga sekarang :"))
-harga_kemarin = 105.0
+harga_kemarin = float(input("Masukkan harga sekarang :"))
+harga_sekarang = 105.0
 pilihan = ['jual', 'tahan', 'beli']
 
 persentasi = ((harga_sekarang - harga_kemarin)/harga_kemarin)*100
