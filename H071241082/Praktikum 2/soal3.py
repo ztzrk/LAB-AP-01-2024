@@ -29,5 +29,3 @@ else:
                 else:
                     print("Nilai akhir anda kurang dari 60 dan tugas tambahan tidak diselesaikan dengan baik. Anda tidak lulus!!")
 
-
-
