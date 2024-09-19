@@ -1,8 +1,10 @@
 nilai_akhir = int(input("Masukkan nilai akhir : "))
-kehadiran = int(input("Masukkan presentase kehadiran : "))
 
 if nilai_akhir > 100 or kehadiran > 100:
     print("Nilai anda tidak valid")
+    exit()
+
+kehadiran = int(input("Masukkan presentase kehadiran : "))  
 if kehadiran < 75:
     print("Tidak Lulus karena tidak memenuhi syarat kehadiran")
 elif 75 >= kehadiran <= 100:

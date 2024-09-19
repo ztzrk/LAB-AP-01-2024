@@ -1,24 +1,26 @@
 usia = int(input("Masukkan usia : "))
-keanggotaan = input("Apakah Anda anggota (ya/tidak) ? ")
 
-if usia < 5:
-    harga = 0
-elif 5 <= usia <= 12:
-    harga = 50000
-elif 13 <= usia <= 59:
-    harga = 100000
+if usia <= 0:
+    print("Usia tidak valid")
+elif usia < 5:
+    print("Tiket anda Gratis")
 else:
-    harga = 70000
-
-
-if keanggotaan == "ya" or keanggotaan == "tidak":
-    harga_diskon = harga * (0.8 if keanggotaan.lower() == "ya" else 1)
-    if harga_diskon == 0:
-        print("tiket anda gratis")
+    keanggotaan = input("Apakah Anda anggota (ya/tidak) ? ")
+    if 5 <= usia <= 12:
+        if keanggotaan == "ya":
+            harga = 50000 * 0.8
+        else:
+            harga = 50000
+    elif 13 <= usia <= 59:
+        if keanggotaan == "ya":
+            harga = 100000 * 0.8
+        else:
+            harga = 100000
+        
     else:
-        print(f"Harga tiket adalah Rp {int(harga_diskon):,}")
-else:
-    print("Input keanggotaan salah")
-
-    
-
+        if keanggotaan == "ya":
+            harga = 70000 * 0.8
+        else:
+            harga = 70000
+        
+    print(int(harga))
