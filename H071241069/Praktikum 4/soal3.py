@@ -14,7 +14,7 @@ def teka_teki():
                 n //= 2
             else:           
                 n = n*3 + 1
-            langkah += 1   
+            langkah = langkah + 1   
         
         print(float(n)) 
         print(f"Jumlah langkah: {langkah}")  

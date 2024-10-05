@@ -1,5 +1,3 @@
-import random
-
 def HartaKarun():
     total_jarak = 0
     bahaya = False
@@ -13,18 +11,21 @@ def HartaKarun():
         
             if jarak > 20:
                 bahaya = True
-                print("Bruh anda menginjak jalan yang berbahaya")
+                total_jarak += jarak
+
             else:
                 total_jarak += jarak
-                print(f"Total jarak: {total_jarak} meter")
+                
             
         except ValueError:
             print("Input tidak valid. Masukkan bilangan bulat.")
             
     if bahaya:
+        print(f"Total jarak: {total_jarak} meter")
         print("Ada bahaya : Ya")
         print("Keputusan : Tidak aman untuk menggali harta karun. Coba lagi!")
     elif total_jarak == 50:
+        print(f"Total jarak: {total_jarak} meter")
         print("Ada bahaya : Tidak")
         print("Keputusan : Aman! Kamu tepat menemukan harta karun dan menang!")
     else:
